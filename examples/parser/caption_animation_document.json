@@ -1,0 +1,109 @@
+{
+    "message_id": 185,
+    "from": {
+        "id": 111,
+        "is_bot": false,
+        "first_name": "John",
+        "last_name": "Smith",
+        "language_code": "en"
+    },
+    "date": 1732631130,
+    "chat": {
+        "id": 111,
+        "type": "private",
+        "first_name": "John",
+        "last_name": "Smith"
+    },
+    "forward_origin": {
+        "type": "channel",
+        "date": 1732629006,
+        "chat": {
+            "id": -1001639833661,
+            "type": "channel",
+            "title": "GitHub Community"
+        },
+        "message_id": 5758
+    },
+    "animation": {
+        "file_id": "CgACAgIAAxkBAAO5Z0XaWg_IRLtTM-FP3ipMa-vPfHQAArhWAAJfZ-FINE0YDijQpnM2BA",
+        "file_unique_id": "AgADuFYAAl9n4Ug",
+        "width": 320,
+        "height": 268,
+        "duration": 67,
+        "thumbnail": {
+            "file_id": "AAMCAgADGQEAA7lnRdpaD8hEu1Mz4U_eKkxr6898dAACuFYAAl9n4Ug0TRgOKNCmcwEAB20AAzYE",
+            "file_unique_id": "AQADuFYAAl9n4Uhy",
+            "width": 320,
+            "height": 267,
+            "file_size": 1105
+        },
+        "file_name": "p1.gif.mp4",
+        "mime_type": "video/mp4",
+        "file_size": 296935
+    },
+    "document": {
+        "file_id": "CgACAgIAAxkBAAO5Z0XaWg_IRLtTM-FP3ipMa-vPfHQAArhWAAJfZ-FINE0YDijQpnM2BA",
+        "file_unique_id": "AgADuFYAAl9n4Ug",
+        "thumbnail": {
+            "file_id": "AAMCAgADGQEAA7lnRdpaD8hEu1Mz4U_eKkxr6898dAACuFYAAl9n4Ug0TRgOKNCmcwEAB20AAzYE",
+            "file_unique_id": "AQADuFYAAl9n4Uhy",
+            "width": 320,
+            "height": 267,
+            "file_size": 1105
+        },
+        "file_name": "p1.gif.mp4",
+        "mime_type": "video/mp4",
+        "file_size": 296935
+    },
+    "caption": "Clace — это проект, создающий платформу разработки и развертывания веб-приложений для внутренних инструментов.\n\n4️⃣ GitHub",
+    "caption_entities": [
+        {
+            "type": "text_link",
+            "offset": 0,
+            "length": 5,
+            "url": "https://github.com/claceio/clace",
+            "custom_emoji_id": ""
+        },
+        {
+            "type": "bold",
+            "offset": 0,
+            "length": 5,
+            "custom_emoji_id": ""
+        },
+        {
+            "type": "bold",
+            "offset": 112,
+            "length": 3,
+            "custom_emoji_id": ""
+        },
+        {
+            "type": "custom_emoji",
+            "offset": 112,
+            "length": 3,
+            "custom_emoji_id": "5323375426658124630"
+        },
+        {
+            "type": "bold",
+            "offset": 115,
+            "length": 1,
+            "custom_emoji_id": ""
+        },
+        {
+            "type": "text_link",
+            "offset": 116,
+            "length": 6,
+            "url": "https://t.me/+3xphzXTayGE1NDVi",
+            "custom_emoji_id": ""
+        },
+        {
+            "type": "bold",
+            "offset": 116,
+            "length": 6,
+            "custom_emoji_id": ""
+        }
+    ],
+    "pinned_message": null,
+    "reply_markup": {
+        "inline_keyboard": null
+    }
+}

@@ -1,0 +1,14 @@
+---
+Title: Title
+Date: {{ .Message.Date | unixDateTime }}
+{{if .Message.ReplyToMessage }}Reply: {{ .Message.ReplyToMessage.ID}}
+{{ end }}---
+{{if .Message.Photo }}![]({{ .Message.Photo | getSizedPhoto | getFileName }})
+
+{{ end }}{{if .Message.Video }}![]({{ .Message.Video.Thumbnail.FileID | getFileName }})
+
+{{ end }}{{if .Message.Voice }}![]({{ .Message.Voice.FileID | getFileName }})
+
+{{ end }}{{if .Message.Animation }}![]({{ .Message.Animation.Thumbnail.FileID | getFileName }})
+
+{{ end }}{{ .Content }}

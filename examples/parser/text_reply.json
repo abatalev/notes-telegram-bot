@@ -1,0 +1,66 @@
+{
+    "message_id": 162,
+    "from": {
+        "id": 111,
+        "is_bot": false,
+        "first_name": "John",
+        "last_name": "Smith",
+        "language_code": "en"
+    },
+    "date": 1732214607,
+    "chat": {
+        "id": 111,
+        "type": "private",
+        "first_name": "John",
+        "last_name": "Smith"
+    },
+    "reply_to_message": {
+        "message_id": 161,
+        "from": {
+            "id": 111,
+            "is_bot": false,
+            "first_name": "John",
+            "last_name": "Smith",
+            "language_code": "en"
+        },
+        "date": 1732214549,
+        "chat": {
+            "id": 111,
+            "type": "private",
+            "first_name": "John",
+            "last_name": "Smith"
+        },
+        "forward_origin": {
+            "type": "channel",
+            "date": 1732122844,
+            "chat": {
+                "id": -1001325452055,
+                "type": "channel",
+                "title": "Полезняшки от \"Разбора Полетов\"",
+                "username": "razborfeed"
+            },
+            "message_id": 4079
+        },
+        "text": "https://sdtimes.com/softwaredev/lightbend-releases-akka-3-renames-company-to-akka/",
+        "entities": [
+            {
+                "type": "url",
+                "offset": 0,
+                "length": 82,
+                "custom_emoji_id": ""
+            }
+        ],
+        "link_preview_options": {
+            "url": "https://sdtimes.com/softwaredev/lightbend-releases-akka-3-renames-company-to-akka/"
+        },
+        "pinned_message": null,
+        "reply_markup": {
+            "inline_keyboard": null
+        }
+    },
+    "text": "jfkdjjfkjfk",
+    "pinned_message": null,
+    "reply_markup": {
+        "inline_keyboard": null
+    }
+}

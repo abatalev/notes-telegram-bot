@@ -1,0 +1,138 @@
+{
+    "message_id": 89,
+    "from": {
+        "id": 111,
+        "first_name": "John",
+        "last_name": "Smith",
+        "language_code": "en"
+    },
+    "date": 1731512244,
+    "chat": {
+        "id": 111,
+        "type": "private",
+        "first_name": "John",
+        "last_name": "Smith",
+        "photo": null,
+        "location": null
+    },
+    "forward_from_chat": {
+        "id": -1001354174226,
+        "type": "channel",
+        "title": "The Art Of Programming",
+        "username": "taoplive",
+        "photo": null,
+        "location": null
+    },
+    "forward_from_message_id": 634,
+    "forward_date": 1731484881,
+    "photo": [
+        {
+            "file_id": "AgACAgIAAxkBAANZZzTHtFTqYa9T80hqu7nn7mMzB2wAAj_hMRt0z6BJNya6DwwN_W8BAAMCAANzAAM2BA",
+            "file_unique_id": "AQADP-ExG3TPoEl4",
+            "width": 90,
+            "height": 90,
+            "file_size": 2467
+        },
+        {
+            "file_id": "AgACAgIAAxkBAANZZzTHtFTqYa9T80hqu7nn7mMzB2wAAj_hMRt0z6BJNya6DwwN_W8BAAMCAANtAAM2BA",
+            "file_unique_id": "AQADP-ExG3TPoEly",
+            "width": 320,
+            "height": 320,
+            "file_size": 46000
+        },
+        {
+            "file_id": "AgACAgIAAxkBAANZZzTHtFTqYa9T80hqu7nn7mMzB2wAAj_hMRt0z6BJNya6DwwN_W8BAAMCAAN4AAM2BA",
+            "file_unique_id": "AQADP-ExG3TPoEl9",
+            "width": 800,
+            "height": 800,
+            "file_size": 244556
+        },
+        {
+            "file_id": "AgACAgIAAxkBAANZZzTHtFTqYa9T80hqu7nn7mMzB2wAAj_hMRt0z6BJNya6DwwN_W8BAAMCAAN5AAM2BA",
+            "file_unique_id": "AQADP-ExG3TPoEl-",
+            "width": 1024,
+            "height": 1024,
+            "file_size": 248859
+        }
+    ],
+    "caption": "Основные принципы среды нулевого доверия.\n\nЗамок — это, пожалуй, самая популярная метафора безопасности. Действительно, традиционная сетевая безопасность направлена на то, чтобы держать плохих парней за стенами замка. А внутри периметра всё считается благонадёжным, даже если смотреть в открытую форточку без сетки от насекомых. Такую архитектуру сетевой безопасности ещё называют «замок и ров» (castle-and-moat). Хранить ценные ресурсы в подвале замка в современном мире гибридных архитектур, облаков и удалённой работы крайне неудобно.\n\nИдею «депериметризации» с 2003 года прорабатывала международная рабочая группа, известная как Jericho Forum. В результате были сформулированы «заповеди», которые в дальнейшем легли в основу принципов среды нулевого доверия.\n\nМожно назвать тройку основных принципов Zero Trust:\n\nПредполагать нарушение. Любой человек или устройство могут в принципе оказаться скомпрометированными, даже если они подключаются из офиса.\n\nПроверять явно. Все люди и устройства должны доказать, что они те, за кого себя выдают, прежде чем они смогут получить доступ к сетевым ресурсам.\n\nПредоставлять доступ с наименьшими привилегиями. Даже после того, как пользователь прошёл явную верификацию, он должен иметь только минимальный доступ к сети, необходимый ему для выполнения своей работы, и не более того.\n\n\nХотя, если копнуть еще чуть глубже, то в стандарте NIST 800-207 их, например, 7.\n\nСмена парадигм — увлекательная штука. Пока мы раздаём минимум прав внутри и снаружи периметра, база инцидентов ИИ растёт и кому-то уже мешает спать спокойно, например, тут или тут.",
+    "caption_entities": [
+        {
+            "type": "bold",
+            "offset": 0,
+            "length": 41
+        },
+        {
+            "type": "bold",
+            "offset": 382,
+            "length": 11
+        },
+        {
+            "type": "bold",
+            "offset": 633,
+            "length": 13
+        },
+        {
+            "type": "text_link",
+            "offset": 682,
+            "length": 8,
+            "url": "https://collaboration.opengroup.org/jericho/commandments_v1.2.pdf"
+        },
+        {
+            "type": "text_link",
+            "offset": 739,
+            "length": 22,
+            "url": "https://t.me/taoplive/608"
+        },
+        {
+            "type": "blockquote",
+            "offset": 817,
+            "length": 508
+        },
+        {
+            "type": "bold",
+            "offset": 817,
+            "length": 23
+        },
+        {
+            "type": "bold",
+            "offset": 957,
+            "length": 15
+        },
+        {
+            "type": "bold",
+            "offset": 1104,
+            "length": 48
+        },
+        {
+            "type": "text_link",
+            "offset": 1378,
+            "length": 12,
+            "url": "https://nvlpubs.nist.gov/nistpubs/specialpublications/NIST.SP.800-207.pdf"
+        },
+        {
+            "type": "text_link",
+            "offset": 1504,
+            "length": 18,
+            "url": "https://t.me/taoplive/597"
+        },
+        {
+            "type": "text_link",
+            "offset": 1577,
+            "length": 3,
+            "url": "https://habr.com/ru/articles/858020/"
+        },
+        {
+            "type": "text_link",
+            "offset": 1585,
+            "length": 3,
+            "url": "https://t.me/taoplive/337"
+        }
+    ],
+    "message_auto_delete_timer_changed": null,
+    "proximity_alert_triggered": null,
+    "voice_chat_scheduled": null,
+    "voice_chat_started": null,
+    "voice_chat_ended": null,
+    "voice_chat_participants_invited": null
+}

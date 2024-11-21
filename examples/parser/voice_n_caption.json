@@ -1,0 +1,76 @@
+{
+    "message_id": 101,
+    "from": {
+        "id": 111,
+        "first_name": "John",
+        "last_name": "Smith",
+        "language_code": "en"
+    },
+    "date": 1731578270,
+    "chat": {
+        "id": 111,
+        "type": "private",
+        "first_name": "John",
+        "last_name": "Smith",
+        "photo": null,
+        "location": null
+    },
+    "forward_from_chat": {
+        "id": -1001646516786,
+        "type": "channel",
+        "title": "Romanov Capital",
+        "username": "romcapital",
+        "photo": null,
+        "location": null
+    },
+    "forward_from_message_id": 6084,
+    "forward_date": 1731564312,
+    "voice": {
+        "file_id": "AwACAgIAAxkBAANlZzXJnpXtQ9D-eqhMtgGbJLmLRw8AArVfAAJ2L6hJsqmE7sCq15s2BA",
+        "file_unique_id": "AgADtV8AAnYvqEk",
+        "duration": 200,
+        "mime_type": "audio/ogg",
+        "file_size": 801662
+    },
+    "caption": "Константин, эксперт команды — ответил на 3 актуальные темы \n\n0:10 —  🇷🇺Сбор за рекламу в интернете. Кто в группе риска?\n\n0:52 — 🛍Какие компании выигрывают от высокой ставки ЦБ? \n\n2:38 — 💸Новый порядок отчетности о доходах от криптовалют в РФ. Что известно? \n\n#подкаст\n\n©Romanov Capital — Подписаться.",
+    "caption_entities": [
+        {
+            "type": "text_link",
+            "offset": 0,
+            "length": 11,
+            "url": "https://t.me/romcapital/4894"
+        },
+        {
+            "type": "custom_emoji",
+            "offset": 69,
+            "length": 4
+        },
+        {
+            "type": "custom_emoji",
+            "offset": 130,
+            "length": 2
+        },
+        {
+            "type": "custom_emoji",
+            "offset": 189,
+            "length": 2
+        },
+        {
+            "type": "hashtag",
+            "offset": 263,
+            "length": 8
+        },
+        {
+            "type": "text_link",
+            "offset": 273,
+            "length": 31,
+            "url": "https://t.me/+xEAYbPsRigY1NDhi"
+        }
+    ],
+    "message_auto_delete_timer_changed": null,
+    "proximity_alert_triggered": null,
+    "voice_chat_scheduled": null,
+    "voice_chat_started": null,
+    "voice_chat_ended": null,
+    "voice_chat_participants_invited": null
+}

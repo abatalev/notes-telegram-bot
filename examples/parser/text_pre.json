@@ -1,0 +1,30 @@
+{
+    "message_id": 158,
+    "from": {
+        "id": 111,
+        "is_bot": false,
+        "first_name": "John",
+        "last_name": "Smith",
+        "language_code": "en"
+    },
+    "date": 1732207441,
+    "chat": {
+        "id": 111,
+        "type": "private",
+        "first_name": "John",
+        "last_name": "Smith"
+    },
+    "text": "ddd\ndjkjkjdlkj\nhdjhjh kjh kjh  jhjhj h\njhdjh djh  jhd hd",
+    "entities": [
+        {
+            "type": "pre",
+            "offset": 4,
+            "length": 34,
+            "custom_emoji_id": ""
+        }
+    ],
+    "pinned_message": null,
+    "reply_markup": {
+        "inline_keyboard": null
+    }
+}

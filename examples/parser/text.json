@@ -1,0 +1,43 @@
+{
+    "message_id": 102,
+    "from": {
+        "id": 111,
+        "first_name": "John",
+        "last_name": "Smith",
+        "language_code": "en"
+    },
+    "date": 1731588460,
+    "chat": {
+        "id": 111,
+        "type": "private",
+        "first_name": "John",
+        "last_name": "Smith",
+        "photo": null,
+        "location": null
+    },
+    "forward_from_chat": {
+        "id": -1001005993407,
+        "type": "channel",
+        "title": "addmeto",
+        "username": "addmeto",
+        "photo": null,
+        "location": null
+    },
+    "forward_from_message_id": 5944,
+    "forward_signature": "Grigory Bakunov",
+    "forward_date": 1731588394,
+    "text": "Слухи и документы подтверждают, что Амазон не вывез и отменил секретный проект по разработке трекера фертильности. На самом деле это чуть не единственный проект Амазона, про который мы знаем что его делали и при этом отменили. Может дело в том, что это была часть внутреннего стартап-инкубатора. https://www.cnbc.com/2024/11/13/amazon-shuts-down-secret-project-to-develop-fertility-tracker.html",
+    "entities": [
+        {
+            "type": "url",
+            "offset": 296,
+            "length": 98
+        }
+    ],
+    "message_auto_delete_timer_changed": null,
+    "proximity_alert_triggered": null,
+    "voice_chat_scheduled": null,
+    "voice_chat_started": null,
+    "voice_chat_ended": null,
+    "voice_chat_participants_invited": null
+}

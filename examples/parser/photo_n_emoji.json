@@ -1,0 +1,109 @@
+{
+    "message_id": 151,
+    "from": {
+        "id": 111,
+        "is_bot": false,
+        "first_name": "John",
+        "last_name": "Smith",
+        "language_code": "en"
+    },
+    "date": 1731665199,
+    "chat": {
+        "id": 111,
+        "type": "private",
+        "first_name": "John",
+        "last_name": "Smith"
+    },
+    "forward_origin": {
+        "type": "channel",
+        "date": 1731181520,
+        "chat": {
+            "id": -1001639833661,
+            "type": "channel",
+            "title": "GitHub Community",
+            "username": "github"
+        },
+        "message_id": 5616
+    },
+    "photo": [
+        {
+            "file_id": "AgACAgIAAxkBAAOXZzcdLyiAVF0nhbcQNKo7JLh-tBgAAmPeMRvy-3BJ929FTzxmJUYBAAMCAANzAAM2BA",
+            "file_unique_id": "AQADY94xG_L7cEl4",
+            "width": 90,
+            "height": 45,
+            "file_size": 1016
+        },
+        {
+            "file_id": "AgACAgIAAxkBAAOXZzcdLyiAVF0nhbcQNKo7JLh-tBgAAmPeMRvy-3BJ929FTzxmJUYBAAMCAANtAAM2BA",
+            "file_unique_id": "AQADY94xG_L7cEly",
+            "width": 320,
+            "height": 160,
+            "file_size": 10765
+        },
+        {
+            "file_id": "AgACAgIAAxkBAAOXZzcdLyiAVF0nhbcQNKo7JLh-tBgAAmPeMRvy-3BJ929FTzxmJUYBAAMCAAN4AAM2BA",
+            "file_unique_id": "AQADY94xG_L7cEl9",
+            "width": 800,
+            "height": 400,
+            "file_size": 37449
+        },
+        {
+            "file_id": "AgACAgIAAxkBAAOXZzcdLyiAVF0nhbcQNKo7JLh-tBgAAmPeMRvy-3BJ929FTzxmJUYBAAMCAAN5AAM2BA",
+            "file_unique_id": "AQADY94xG_L7cEl-",
+            "width": 1200,
+            "height": 600,
+            "file_size": 55230
+        }
+    ],
+    "caption": "FreeThinker — это агент ИИ, который использует бесплатные API с открытым исходным кодом LLM для автоматизации задач. \n\nЭто означает, что вам не нужны ключи API с оплатой за токены для его запуска.\n\n4️⃣ GitHub",
+    "caption_entities": [
+        {
+            "type": "text_link",
+            "offset": 0,
+            "length": 11,
+            "url": "https://github.com/diegovelilla/FreeThinker",
+            "custom_emoji_id": ""
+        },
+        {
+            "type": "bold",
+            "offset": 0,
+            "length": 11,
+            "custom_emoji_id": ""
+        },
+        {
+            "type": "bold",
+            "offset": 198,
+            "length": 3,
+            "custom_emoji_id": ""
+        },
+        {
+            "type": "custom_emoji",
+            "offset": 198,
+            "length": 3,
+            "custom_emoji_id": "5323375426658124630"
+        },
+        {
+            "type": "bold",
+            "offset": 201,
+            "length": 1,
+            "custom_emoji_id": ""
+        },
+        {
+            "type": "text_link",
+            "offset": 202,
+            "length": 6,
+            "url": "https://t.me/+3xphzXTayGE1NDVi",
+            "custom_emoji_id": ""
+        },
+        {
+            "type": "bold",
+            "offset": 202,
+            "length": 6,
+            "custom_emoji_id": ""
+        }
+    ],
+    "pinned_message": null,
+    "reply_markup": {
+        "inline_keyboard": null
+    }
+}
