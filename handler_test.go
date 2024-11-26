@@ -11,6 +11,7 @@ import (
 
 func TestHandler(t *testing.T) {
 	telegramFromId = 111
+	telegramSaveJson = false
 	variants := []struct {
 		jsonName string
 	}{

@@ -35,6 +35,7 @@ func TestSplit80(t *testing.T) {
 }
 
 func TestXxx(t *testing.T) {
+	telegramSaveJson = false
 	nn := []string{
 		"photo_n_emoji", "text", "photo_n_caption", "video_n_caption",
 		"voice_n_caption", "text_code", "text_pre", "text_pre_lang",
