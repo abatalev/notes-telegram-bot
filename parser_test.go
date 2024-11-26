@@ -34,7 +34,7 @@ func TestSplit80(t *testing.T) {
 	}
 }
 
-func TestXxx(t *testing.T) {
+func TestParseExamples(t *testing.T) {
 	telegramSaveJson = false
 	telegramDir = t.TempDir()
 	nn := []string{

@@ -42,7 +42,7 @@ func InitTemplate(getFileName func(string) string) *template.Template {
 	t, err := template.New("note").
 		Funcs(template.FuncMap{
 			"unixDateTime": func(date int) string {
-				return time.Unix(int64(date), 0).Format(time.RFC3339)
+				return time.Unix(int64(date), 0).UTC().Format(time.RFC3339)
 			},
 			"getFileName":   getFileName,
 			"getSizedPhoto": getSizedPhoto,
