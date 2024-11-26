@@ -4,12 +4,14 @@ import (
 	"context"
 	"os"
 	"os/signal"
+	"path/filepath"
 	"testing"
 
 	"github.com/go-telegram/bot/models"
 )
 
 func TestHandler(t *testing.T) {
+	telegramDir = t.TempDir()
 	telegramFromId = 111
 	telegramSaveJson = false
 	variants := []struct {
@@ -28,7 +30,8 @@ func TestHandler(t *testing.T) {
 }
 
 func TestDownload(t *testing.T) {
-	if err := downloadFile("data/index.html", "https://ya.ru/"); err != nil {
+	telegramDir = t.TempDir()
+	if err := downloadFile(filepath.Join(telegramDir, "index.html"), "https://ya.ru/"); err != nil {
 		t.Fatal(err)
 	}
 }
