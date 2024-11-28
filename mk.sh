@@ -99,7 +99,7 @@ if [ "$?" != "0" ]; then
 fi
 
 echo "### total coverage"
-./build/gototcov -f coverage.out -limit 47
+./build/gototcov -f coverage.out -limit 46
 if [ "$?" != "0" ]; then
     echo "### open browser"
     go tool cover -html=coverage.out

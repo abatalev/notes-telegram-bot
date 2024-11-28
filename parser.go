@@ -55,7 +55,7 @@ func InitTemplate(getFileName func(string) string) *template.Template {
 }
 
 func LoadTemplate() string {
-	f, err := os.ReadFile("note.tmpl")
+	f, err := os.ReadFile(telegramTemplate)
 	if err != nil {
 		panic(err)
 	}

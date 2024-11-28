@@ -7,5 +7,6 @@ RUN ls -la /src/
 
 FROM alpine:3.20
 COPY --from=builder /src/notes-telegram /opt/app/
+WORKDIR /opt/app
 ENTRYPOINT [ "/opt/app/notes-telegram" ]
 

@@ -19,6 +19,7 @@ var telegramFromId int64
 var telegramDir string = "data"
 var telegramSaveJson bool = true
 var telegramDelete bool = false
+var telegramTemplate string = "note.tmpl"
 
 func main() {
 	showHelp := flag.Bool("help", false, "show help")
@@ -59,6 +60,14 @@ func main() {
 	token := os.Getenv("TELEGRAM_APITOKEN")
 	if token == "" {
 		log.Fatal("TELEGRAM_APITOKEN not found")
+	}
+
+	tmpl := os.Getenv("TELEGRAM_TEMPLATE")
+	if token != "" {
+		telegramTemplate = tmpl
+	}
+	if _, err := os.Stat(telegramTemplate); err != nil {
+		log.Fatal("template '" + telegramTemplate + "' not found")
 	}
 
 	var err error

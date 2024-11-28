@@ -5,6 +5,7 @@ services:
       - TELEGRAM_APITOKEN=${TELEGRAM_APITOKEN}
       - TELEGRAM_FROMID=${TELEGRAM_FROMID}
       - TELEGRAM_DIR=/var/notes
+      - TELEGRAM_JSON=0
     volumes:
       - notes-data:/var/notes
   syncthing:
