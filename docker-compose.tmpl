@@ -10,8 +10,14 @@ services:
   syncthing:
     image: syncthing/syncthing
     hostname: ${SYNCTHING_HOSTNAME}
+    environment:
+      - PID=1000
+      - PGID=1000
     ports:
-      - 18384:8384
+      - 8384:8384
+      - 22000:22000/tcp
+      - 22000:22000/udp
+      - 21027:21027/udp
     volumes:
       - syncthing-config:/var/syncthing
       - notes-data:/data
