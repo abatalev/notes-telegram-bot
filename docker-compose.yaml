@@ -1,0 +1,20 @@
+services:
+  bot:
+    image: notes-telegram-bot
+    environment:
+      - TELEGRAM_APITOKEN=${TELEGRAM_APITOKEN}
+      - TELEGRAM_FROMID=${TELEGRAM_FROMID}
+      - TELEGRAM_DIR=/var/notes
+    volumes:
+      - notes-data:/var/notes
+  syncthing:
+    image: syncthing/syncthing
+    hostname: ${SYNCTHING_HOSTNAME}
+    ports:
+      - 18384:8384
+    volumes:
+      - syncthing-config:/var/syncthing
+      - notes-data:/data
+volumes:
+  syncthing-config:
+  notes-data:

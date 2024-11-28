@@ -3,3 +3,4 @@ notes-telegram
 data/
 local.md
 coverage.out
+.env
