@@ -41,7 +41,7 @@ func main() {
 		return
 	}
 
-	delete := os.Getenv("TELEGRAM_DELET")
+	delete := os.Getenv("TELEGRAM_DELETE")
 	if delete == "1" {
 		telegramDelete = true
 	}
@@ -58,7 +58,7 @@ func main() {
 
 	token := os.Getenv("TELEGRAM_APITOKEN")
 	if token == "" {
-		log.Fatal("TELAGRAM_APITOKEN not found")
+		log.Fatal("TELEGRAM_APITOKEN not found")
 	}
 
 	var err error
