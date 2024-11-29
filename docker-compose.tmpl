@@ -6,6 +6,7 @@ services:
       - TELEGRAM_FROMID=${TELEGRAM_FROMID}
       - TELEGRAM_DIR=/var/notes
       - TELEGRAM_JSON=0
+      - TELEGRAM_PREFIX=note
     volumes:
       - notes-data:/var/notes
   syncthing:

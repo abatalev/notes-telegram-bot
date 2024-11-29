@@ -20,6 +20,7 @@ var telegramDir string = "data"
 var telegramSaveJson bool = true
 var telegramDelete bool = false
 var telegramTemplate string = "note.tmpl"
+var telegramPrefix string = ""
 
 func main() {
 	showHelp := flag.Bool("help", false, "show help")
@@ -55,6 +56,11 @@ func main() {
 	dir := os.Getenv("TELEGRAM_DIR")
 	if dir != "" {
 		telegramDir = dir
+	}
+
+	prefix := os.Getenv("TELEGRAM_PREFIX")
+	if dir != "" {
+		telegramPrefix = prefix
 	}
 
 	token := os.Getenv("TELEGRAM_APITOKEN")

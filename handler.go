@@ -33,7 +33,7 @@ func handler(ctx context.Context, b *bot.Bot, update *models.Update) {
 	x1 := strconv.Itoa(x.ID)
 	if telegramSaveJson {
 		bb, _ := json.Marshal(x)
-		if err := os.WriteFile(filepath.Join(telegramDir, x1+".json"), bb, 0666); err != nil {
+		if err := os.WriteFile(filepath.Join(telegramDir, telegramPrefix+x1+".json"), bb, 0666); err != nil {
 			panic(err)
 		}
 	}
@@ -44,7 +44,7 @@ func handler(ctx context.Context, b *bot.Bot, update *models.Update) {
 			panic("???")
 		}
 		ss, _ := url.Parse(fileUrl)
-		path := filepath.Join(telegramDir, x1+"_"+filepath.Base(ss.Path))
+		path := filepath.Join(telegramDir, telegramPrefix+x1+"_"+filepath.Base(ss.Path))
 		log.Println("Download", path, fileUrl)
 		if err := downloadFile(path, fileUrl); err != nil {
 			panic(err)
@@ -52,7 +52,7 @@ func handler(ctx context.Context, b *bot.Bot, update *models.Update) {
 
 		return path
 	})
-	if err := os.WriteFile(filepath.Join(telegramDir, x1+".md"), Parse(t, *x), 0666); err != nil {
+	if err := os.WriteFile(filepath.Join(telegramDir, telegramPrefix+x1+".md"), Parse(t, *x), 0666); err != nil {
 		panic(err)
 	}
 
