@@ -59,7 +59,7 @@ func main() {
 	}
 
 	prefix := os.Getenv("TELEGRAM_PREFIX")
-	if dir != "" {
+	if prefix != "" {
 		telegramPrefix = prefix
 	}
 
@@ -69,7 +69,7 @@ func main() {
 	}
 
 	tmpl := os.Getenv("TELEGRAM_TEMPLATE")
-	if token != "" {
+	if tmpl != "" {
 		telegramTemplate = tmpl
 	}
 	if _, err := os.Stat(telegramTemplate); err != nil {
