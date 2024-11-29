@@ -1,6 +1,6 @@
 ---
-Title: Title
-Date: {{ .Message.Date | unixDateTime }}
+title: {{ .Content | title }}
+date: {{ .Message.Date | unixDateTime }}
 {{if .Message.ReplyToMessage }}Reply: {{ .Message.ReplyToMessage.ID}}
 {{ end }}---
 {{if .Message.Photo }}![]({{ .Message.Photo | getSizedPhoto | getFileName }})
