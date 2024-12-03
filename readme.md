@@ -1,9 +1,5 @@
 # Telegram Bot for Create Notes from Messages 
 
-## To Do
-
-- calc title
-
 ## Build and run
 
 ```sh
@@ -32,6 +28,9 @@ TELEGRAM_FROMID
 
 TELEGRAM_DIR
 : directory for save notes
+
+TELEGRAM_PREFIX
+: prefix saved file ({{prefix}}{{NNN}}.md) 
 
 ## Usage pattern
 
