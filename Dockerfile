@@ -3,7 +3,6 @@ COPY *.go /src/
 COPY go.* /src/
 WORKDIR /src
 RUN  go build .
-RUN ls -la /src/
 
 FROM alpine:3.20
 COPY --from=builder /src/notes-telegram /opt/app/
