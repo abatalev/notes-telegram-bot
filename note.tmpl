@@ -1,7 +1,8 @@
 ---
 title: {{ .Content | title }}
 date: {{ .Message.Date | unixDateTime }}
-{{if .Message.ReplyToMessage }}Reply: {{ .Message.ReplyToMessage.ID}}
+{{if .Message.ForwardOrigin }}origin: https://t.me/{{if .Message.ForwardOrigin.MessageOriginChannel.Chat.Username }}{{ .Message.ForwardOrigin.MessageOriginChannel.Chat.Username }}{{ else }}{{ .Message.ForwardOrigin.MessageOriginChannel.Chat.Title }}{{ end }}/{{ .Message.ForwardOrigin.MessageOriginChannel.MessageID }}
+{{ end }}{{if .Message.ReplyToMessage }}Reply: {{ .Global.Prefix }}{{ .Message.ReplyToMessage.ID}}.md
 {{ end }}---
 {{if .Message.Photo }}![]({{ .Message.Photo | getSizedPhoto | getFileName }})
 

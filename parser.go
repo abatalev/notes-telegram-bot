@@ -14,19 +14,25 @@ import (
 	"github.com/go-telegram/bot/models"
 )
 
-func Parse(t *template.Template, message models.Message) []byte {
+type GlobalConfig struct {
+	Prefix string
+}
+
+func Parse(t *template.Template, message models.Message) ([]byte, error) {
 	buff := new(bytes.Buffer)
 	err := t.Execute(buff, struct {
+		Global  GlobalConfig
 		Message models.Message
 		Content string
 	}{
+		Global:  GlobalConfig{Prefix: telegramPrefix},
 		Message: message,
 		Content: parseContent(message),
 	})
 	if err != nil {
-		panic(err)
+		return []byte{}, nil
 	}
-	return buff.Bytes()
+	return buff.Bytes(), nil
 }
 
 func getSizedPhoto(photos []models.PhotoSize) string {

@@ -37,6 +37,7 @@ func TestSplit80(t *testing.T) {
 func TestParseExamples(t *testing.T) {
 	telegramSaveJson = false
 	telegramDir = t.TempDir()
+	telegramPrefix = "bot"
 	nn := []string{
 		"photo_n_emoji", "text", "photo_n_caption", "video_n_caption",
 		"voice_n_caption", "text_code", "text_pre", "text_pre_lang",
@@ -47,7 +48,11 @@ func TestParseExamples(t *testing.T) {
 		return "banner.jpg"
 	})
 	for _, n := range nn {
-		require.Equal(t, string(readFile("parser/"+n, "md", t)), string(Parse(tmpl, unmarshalJson("parser/"+n, t))), n)
+		buf, err := Parse(tmpl, unmarshalJson("parser/"+n, t))
+		if err != nil {
+			require.Fail(t, n)
+		}
+		require.Equal(t, string(readFile("parser/"+n, "md", t)), string(buf), n)
 	}
 }
 

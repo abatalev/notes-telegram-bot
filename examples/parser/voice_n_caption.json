@@ -15,16 +15,16 @@
         "photo": null,
         "location": null
     },
-    "forward_from_chat": {
+    "forward_origin": {
         "id": -1001646516786,
         "type": "channel",
-        "title": "Romanov Capital",
-        "username": "romcapital",
-        "photo": null,
-        "location": null
+        "message_id": 6084,
+        "date": 1731564312,
+        "chat": {
+            "title": "Romanov Capital",
+            "username": "romcapital"
+        }
     },
-    "forward_from_message_id": 6084,
-    "forward_date": 1731564312,
     "voice": {
         "file_id": "AwACAgIAAxkBAANlZzXJnpXtQ9D-eqhMtgGbJLmLRw8AArVfAAJ2L6hJsqmE7sCq15s2BA",
         "file_unique_id": "AgADtV8AAnYvqEk",

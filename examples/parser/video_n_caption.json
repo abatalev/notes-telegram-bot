@@ -15,16 +15,16 @@
         "photo": null,
         "location": null
     },
-    "forward_from_chat": {
-        "id": -1001639833661,
+    "forward_origin": {
         "type": "channel",
-        "title": "GitHub Community",
-        "username": "github",
-        "photo": null,
-        "location": null
+        "message_id": 5614,
+        "date": 1731173432,
+        "chat": {
+            "id": -1001639833661,
+            "title": "GitHub Community",
+            "username": "github"
+        }
     },
-    "forward_from_message_id": 5614,
-    "forward_date": 1731173432,
     "video": {
         "file_id": "BAACAgIAAxkBAANYZzS7VFwPjlMTF0h3oCShetM6QVwAAn1RAALy-3BJf1jIvYsv4g02BA",
         "file_unique_id": "AgADfVEAAvL7cEk",

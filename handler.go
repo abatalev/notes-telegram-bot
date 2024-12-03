@@ -56,7 +56,8 @@ func handler(ctx context.Context, b *bot.Bot, update *models.Update) {
 
 		return shortFileName
 	})
-	if err := os.WriteFile(filepath.Join(telegramDir, telegramPrefix+x1+".md"), Parse(t, *x), 0666); err != nil {
+	buf, _ := Parse(t, *x)
+	if err := os.WriteFile(filepath.Join(telegramDir, telegramPrefix+x1+".md"), buf, 0666); err != nil {
 		panic(err)
 	}
 
