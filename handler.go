@@ -43,14 +43,18 @@ func handler(ctx context.Context, b *bot.Bot, update *models.Update) {
 		if ok {
 			panic("???")
 		}
-		ss, _ := url.Parse(fileUrl)
-		path := filepath.Join(telegramDir, telegramPrefix+x1+"_"+filepath.Base(ss.Path))
+		parsedFileUrl, err := url.Parse(fileUrl)
+		if err != nil {
+			panic(err)
+		}
+		shortFileName := telegramPrefix + x1 + "_" + filepath.Base(parsedFileUrl.Path)
+		path := filepath.Join(telegramDir, shortFileName)
 		log.Println("Download", path, fileUrl)
 		if err := downloadFile(path, fileUrl); err != nil {
 			panic(err)
 		}
 
-		return path
+		return shortFileName
 	})
 	if err := os.WriteFile(filepath.Join(telegramDir, telegramPrefix+x1+".md"), Parse(t, *x), 0666); err != nil {
 		panic(err)
