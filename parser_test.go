@@ -38,6 +38,7 @@ func TestParseExamples(t *testing.T) {
 	telegramSaveJson = false
 	telegramDir = t.TempDir()
 	telegramPrefix = "bot"
+	telegramTitleSize = 2000
 	nn := []string{
 		"photo_n_emoji", "text", "photo_n_caption", "video_n_caption",
 		"voice_n_caption", "text_code", "text_pre", "text_pre_lang",

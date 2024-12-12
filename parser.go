@@ -53,28 +53,40 @@ func InitTemplate(getFileName func(string) string) *template.Template {
 			},
 			"getFileName":   getFileName,
 			"getSizedPhoto": getSizedPhoto,
-			"title": func(content string) string {
-				s := content
-				s = strings.ReplaceAll(s, "**", "")
-				s = strings.ReplaceAll(s, "```", ".\n")
-				s = strings.ReplaceAll(s, "\n", " ")
-				linkRegexp := regexp.MustCompile(`\[(.*?)\]\(.*?\)`)
-				s = linkRegexp.ReplaceAllString(s, "$1")
-				idx := strings.Index(s, ". ")
-				if idx >= 0 {
-					// if idx > 120 {
-					// 	return s[0:120]
-					// }
-					return strings.TrimSpace(s[0:idx])
-				}
-				return strings.TrimSpace(s)
-			},
+			"title":         getTitle,
 		}).
 		Parse(LoadTemplate())
 	if err != nil {
 		panic(err)
 	}
 	return t
+}
+
+func getTitle(content string) string {
+	s := content
+	s = strings.ReplaceAll(s, "**", "")
+	s = strings.ReplaceAll(s, "```", ".\n")
+	s = strings.ReplaceAll(s, "\n", " ")
+	linkRegexp := regexp.MustCompile(`\[(.*?)\]\(.*?\)`)
+	s = linkRegexp.ReplaceAllString(s, "$1")
+	s = strings.ReplaceAll(s, " @", "")
+	idx := strings.Index(s, ". ")
+	if idx >= 0 {
+		if idx > telegramTitleSize {
+			log.Println("!!!!", idx, telegramTitleSize)
+			return fineTune(s[0:telegramTitleSize])
+		}
+		return fineTune(s[0:idx])
+	}
+	return fineTune(s)
+}
+
+func fineTune(s string) string {
+	s = strings.TrimSpace(s)
+	if strings.Contains(s, ":") {
+		s = "\"" + s + "\""
+	}
+	return s
 }
 
 func LoadTemplate() string {

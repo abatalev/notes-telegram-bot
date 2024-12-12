@@ -21,6 +21,7 @@ var telegramSaveJson bool = true
 var telegramDelete bool = false
 var telegramTemplate string = "note.tmpl"
 var telegramPrefix string = ""
+var telegramTitleSize int = 120
 
 func main() {
 	showHelp := flag.Bool("help", false, "show help")
